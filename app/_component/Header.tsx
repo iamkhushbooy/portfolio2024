@@ -13,7 +13,7 @@ const Header = () => {
                 <Link href={'https://github.com/iamkhushbooy'}>
                     <Image src={'/icons/github.png'} width={30} height={30} alt={'github'}></Image>
                 </Link>
-                <h1 className='font-bold text-[22px] ml-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-pink-500  to-blue-800'>Khushboo</h1>
+                <h1 className='font-extrabold text-[22px] ml-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-pink-500  to-blue-800'>Khushboo</h1>
             </div>
             {!press ?
                 <Image className='mx-8' onClick={toggle} src={'/icons/menu.png'} alt={'menu'} width={30} height={30} ></Image> :
