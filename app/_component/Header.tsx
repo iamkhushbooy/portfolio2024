@@ -8,8 +8,8 @@ const Header = () => {
         setPress(!press)
     }
     return (
-        <div className='w-full h-[50px] flex items-center border-b-[1.5px]'>
-            <div className='ml-8 w-[80%] border flex items-center'>
+        <div className='w-full h-[50px] flex items-center'>
+            <div className='ml-8 w-[80%] flex items-center'>
                 <Link href={'https://github.com/iamkhushbooy'}>
                     <Image src={'/icons/github.png'} width={30} height={30} alt={'github'}></Image>
                 </Link>
