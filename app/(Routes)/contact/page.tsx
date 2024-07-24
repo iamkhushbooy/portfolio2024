@@ -8,9 +8,9 @@ const page = () => {
      <div className='md:flex md:flex-col 
      md:h-[400px]
     '>
-     <div className='ml-8  my-4'>
+     <div className='ml-8  my-7'>
         <h1 className='text-[25px] font-bold'>Contact</h1>
-        <p className='mr-8 text-[14px]'>Looking forward to hearing from you</p>
+        <p className='mr-8 text-[16px]'>Looking forward to hearing from you</p>
       </div>
       <div id="phone" className='my-4'>
         <h2  className='text-[20px] ml-8 font-bold'>Phone</h2>
@@ -18,7 +18,7 @@ const page = () => {
       </div>
       <div id="email" className='my-4'>
         <h2 className='text-[20px] ml-8 font-bold'>Email</h2>
-        <p className='mx-8'>khushboocsjmu@gmail.com</p>
+        <p className='mx-8 text-[16px]'>khushboocsjmu@gmail.com</p>
       </div>
      </div>
       <Form></Form>

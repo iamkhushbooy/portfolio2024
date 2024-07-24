@@ -30,27 +30,27 @@ const page = () => {
         md:flex md:flex-col
         '>
             <input type="text" placeholder='Name'
-                className='border border-black px-2 py-1 w-[100%] h-[40px] my-5'
+                className='border border-black px-2 py-1 w-[100%] h-[50px] my-5'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
             <input type="text" placeholder='Email'
-                className='border border-black px-2 py-1 w-[100%] h-[40px] my-5'
+                className='border border-black px-2 py-1 w-[100%] h-[50px] my-5'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
             />
             <input type="text" placeholder='Phone'
-                className='border border-black px-2 py-1 w-[100%] h-[40px] my-5'
+                className='border border-black px-2 py-1 w-[100%] h-[50px] my-5'
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
             />
             <textarea name="" id="" placeholder='Message'
-                className='border border-black  px-2 py-1 w-[100%] h-[70px] resize-none my-5'
+                className='border border-black  px-2 py-1 w-[100%] h-[120px] resize-none my-5'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <button onClick={submitForm}
-                className={`w-[80px] h-[80px] ${outputmsg?'bg-green-400':'bg-blue-400'} rounded-full mb-5 text-[white]`}>
+                className={`w-[90px] h-[90px] ${outputmsg?'bg-green-400':'bg-blue-400'} rounded-full mb-5 text-[white]`}>
                 {loading?'Submitting':`${outputmsg==='Submitted'?'Submitted':'Submit'}`}
             </button>
 
