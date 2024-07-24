@@ -3,15 +3,18 @@ import Image from 'next/image'
 const page = () => {
   return (
     <div className='w-full h-screen'>
-      <div id="image" className='w-[50%] h-[300px] ml-[25%] flex justify-center items-center'>
-        <Image src={'/khushi.jpg'} width={240} height={240} alt={''} className=' rounded-full'></Image>
+      <div id="image" className='w-[60%] mx-[20%] my-10 h-[50%] flex justify-center items-center'>
+        <Image src={'/khushi.jpg'} width={250} height={250} alt={''} className=' rounded-full'></Image>
+        <button></button>
       </div>
       <div id="text">
         <h1 className='ml-8 text-[20px] font-extralight'>Hello, I'm
-          <span className='ml-3 text-[20px] font-bold text-blue-900'>Khushboo</span>
+          <span className='ml-1 text-[20px] font-bold text-blue-900'>Khushboo</span>
         </h1>
-        <h2 className='ml-8 text-[20px] font-extralight mt-2'>I'm <span className='ml-3 text-[20px] font-bold text-blue-900 mr-3'>Next.Js</span>developer.</h2>
-        <p className='ml-8 font-light mt-4 '>I am a passionate Mechanical Engineering student with a keen interest in software development and programming. While my academic background has provided me with a solid foundation in engineering principles, I have also dedicated significant time to honing my skills in coding and software development.</p>
+        <h2 className='ml-8 text-[20px] font-extralight mt-2'>I'm <span className=' text-[20px] font-bold text-blue-900'>Next.Js </span>developer.</h2>
+        <p className='mx-8 font-light mt-4 '>Currently in my final year of B.Tech in Mechanical Engineering at Kanpur University,
+          I'm deeply passionate about programming and web development.
+          I enjoy turning ideas into reality through code.</p>
       </div>
     </div>
   )
