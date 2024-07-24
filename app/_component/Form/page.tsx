@@ -30,22 +30,22 @@ const page = () => {
         md:flex md:flex-col
         '>
             <input type="text" placeholder='Name'
-                className='border border-black px-2 py-1 w-[100%] my-5'
+                className='border border-black px-2 py-1 w-[100%] h-[40px] my-5'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
             <input type="text" placeholder='Email'
-                className='border border-black px-2 py-1 w-[100%] my-5'
+                className='border border-black px-2 py-1 w-[100%] h-[40px] my-5'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
             />
             <input type="text" placeholder='Phone'
-                className='border border-black px-2 py-1 w-[100%] my-5'
+                className='border border-black px-2 py-1 w-[100%] h-[40px] my-5'
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
             />
             <textarea name="" id="" placeholder='Message'
-                className='border border-black  px-2 py-1 w-[100%] resize-none my-5'
+                className='border border-black  px-2 py-1 w-[100%] h-[70px] resize-none my-5'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             ></textarea>
