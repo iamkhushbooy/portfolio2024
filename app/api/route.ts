@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { transporter } from "../emailConfig";
 
-export const POST = async (req: NextRequest) => {
+export const POST  = async (req: NextRequest) => {
   try {
     const { name, email, phone, message } = await req.json();
     await transporter.sendMail({
