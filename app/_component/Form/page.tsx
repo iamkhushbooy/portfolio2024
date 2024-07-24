@@ -10,7 +10,7 @@ const page = () => {
     const submitForm = async () => {
        if(name&&email&&phone&&message){
         setLoading(true)
-        const f = await fetch('api', {
+        const f = await fetch('/api', {
             method: 'POST',
             headers:{
                 'Content-Type':'application/json'
