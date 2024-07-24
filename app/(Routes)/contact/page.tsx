@@ -13,7 +13,7 @@ const page = () => {
         <p className='mr-8 text-[16px]'>Looking forward to hearing from you</p>
       </div>
       <div id="phone" className='my-4'>
-        <h2  className='text-[20px] ml-8 font-bold'>Phone</h2>
+        <h2  className='text-[20px] ml-8 font-semibold'>Phone</h2>
         <p className='ml-8'>912586****</p>
       </div>
       <div id="email" className='my-4'>
