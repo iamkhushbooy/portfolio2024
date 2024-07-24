@@ -30,22 +30,26 @@ const page = () => {
         md:flex md:flex-col
         '>
             <input type="text" placeholder='Name'
-                className='border border-black px-2 py-1 w-[100%] h-[50px] my-5'
+                className='border border-black px-2 py-1 w-[100%] h-[50px] my-5
+                md:h-[30px]'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
             <input type="text" placeholder='Email'
-                className='border border-black px-2 py-1 w-[100%] h-[50px] my-5'
+                className='border border-black px-2 py-1 w-[100%] h-[50px] my-5
+                 md:h-[30px]'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
             />
             <input type="text" placeholder='Phone'
-                className='border border-black px-2 py-1 w-[100%] h-[50px] my-5'
+                className='border border-black px-2 py-1 w-[100%] h-[50px] my-5
+                 md:h-[30px]'
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
             />
             <textarea name="" id="" placeholder='Message'
-                className='border border-black  px-2 py-1 w-[100%] h-[120px] resize-none my-5'
+                className='border border-black  px-2 py-1 w-[100%] h-[120px] resize-none my-5
+                 md:h-[80px]'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             ></textarea>
