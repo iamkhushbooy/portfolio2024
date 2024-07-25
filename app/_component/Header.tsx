@@ -20,9 +20,11 @@ const Header = () => {
                 <Image className='mx-8' onClick={toggle} src={'/icons/close.png'} alt={'cross'} width={20} height={20} ></Image>
             }
             {press &&
-                <div id="forbuger" className='w-full h-screen bg-[rgb(12,173,222)]  flex justify-center items-center flex-col
-             absolute top-[50px]
-            '>
+                <div id="forbuger" className='w-full h-screen bg-[rgb(12,173,222)]
+                  flex justify-center items-center flex-col
+                  absolute top-[50px] 
+                  md:
+                '>
                     <Link onClick={toggle} className='m-3 font-bold text-white' href={'/'}>ABOUT</Link>
                     <Link onClick={toggle} className='m-3 font-bold text-white' href={'/skills'}>SKILLS</Link>
                     <Link onClick={toggle} className='m-3 font-bold text-white' href={'/projects'}>PROJECT</Link>
