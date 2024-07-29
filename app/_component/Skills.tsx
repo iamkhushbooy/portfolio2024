@@ -27,7 +27,6 @@ const Skills = () => {
       <Skillstyle heading={'VERSION CONTROL'}>
         <SkillChildrenStyle img={'/skillicons/github.png'} name={'GITHUB'}></SkillChildrenStyle>
       </Skillstyle>
-
     </div>
     </div >
   )
