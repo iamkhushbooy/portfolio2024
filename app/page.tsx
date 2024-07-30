@@ -3,8 +3,9 @@ import Image from 'next/image'
 import Skills from './_component/Skills'
 const page = () => {
   return (
+    <>
     <div className='w-full min-h-screen
-           md:flex md:justify-center md:items-center border border-blue-950 md:flex-col'>
+           md:flex md:justify-center md:items-center'>
       <div id="image" className='w-[60%] mx-[20%] my-10 h-[60%] flex justify-center items-center flex-col 
            md:w-[30%] md:mx-0 md:h-[350px]'>
         <Image src={'/khushi.jpg'} width={250} height={250} alt={''} className=' rounded-full'></Image>
@@ -21,8 +22,9 @@ const page = () => {
           I'm deeply passionate about programming and web development.
           I enjoy turning ideas into reality through code.</p>
       </div>
-      <Skills></Skills>
     </div>
+     <Skills></Skills>
+     </>
   )
 }
 

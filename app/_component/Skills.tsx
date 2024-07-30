@@ -2,13 +2,12 @@
 import Skillstyle from './Skillstyle'
 import SkillChildrenStyle from './SkillChildrenStyle'
 const Skills = () => {
- 
+
   return (
-    <div className='w-full my-5 flex justify-center items-center border 
-     border border-red-700
+    <div className='w-full my-5 flex justify-around items-center flex-col
+     md:flex-row md:flex-wrap md:w-auto md:mx-8
     '>
-      <div>
-        <Skillstyle heading={'BASIC WEB DEVELOPMENT'}>
+      <Skillstyle heading={'BASIC WEB DEVELOPMENT'}>
         <SkillChildrenStyle img={'/skillicons/html.png'} name={'HTML'}></SkillChildrenStyle>
         <SkillChildrenStyle img={'/skillicons/css.png'} name={'CSS'}></SkillChildrenStyle>
       </Skillstyle>
@@ -27,7 +26,6 @@ const Skills = () => {
       <Skillstyle heading={'VERSION CONTROL'}>
         <SkillChildrenStyle img={'/skillicons/github.png'} name={'GITHUB'}></SkillChildrenStyle>
       </Skillstyle>
-    </div>
     </div >
   )
 }
