@@ -1,5 +1,5 @@
 import React from 'react'
-const Skillstyle = ({heading,children}:{heading:string,children:string}) => {
+const Skillstyle = ({heading,children}:{heading:string,children: React.ReactNode}) => {
   return (
     <div className='border bg-[#d3cdcd45] rounded my-5 flex justify-center items-center flex-col'>
         <div id="heading" className='text-center font-bold p-3'>{heading}</div>
