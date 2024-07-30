@@ -14,6 +14,7 @@ const Skills = () => {
       <Skillstyle heading={'PROGRAMMING LANGUAGE'}>
         <SkillChildrenStyle img={'/skillicons/java.png'} name={'JAVA'}></SkillChildrenStyle>
         <SkillChildrenStyle img={'/skillicons/javascript.png'} name={'JAVASCRIPT'}></SkillChildrenStyle>
+        <SkillChildrenStyle img={'/skillicons/typescript.png'} name={'TYPESCRIPT'}></SkillChildrenStyle>
       </Skillstyle>
       <Skillstyle heading={'FRAMEWORKS AND LIBRARIES'}>
         <SkillChildrenStyle img={'/skillicons/react.png'} name={'REACT.JS'}></SkillChildrenStyle>
