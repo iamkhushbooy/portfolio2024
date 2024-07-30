@@ -4,7 +4,7 @@ import SkillChildrenStyle from './SkillChildrenStyle'
 const Skills = () => {
 
   return (
-    <div className='w-full my-5 flex justify-around items-center flex-col
+    <div className='w-full flex justify-around items-center flex-col
      md:flex-row md:flex-wrap md:w-auto md:mx-8
     '>
       <Skillstyle heading={'BASIC WEB DEVELOPMENT'}>
