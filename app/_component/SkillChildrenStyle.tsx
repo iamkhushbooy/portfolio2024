@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
-const SkillChildrenStyle = ({ img,name}) => {
+const SkillChildrenStyle = ({ img,name}:{img:string,name:string}) => {
     const [press,setPress]=useState(false)
     return (
         <div className='w-[80px] h-[80px] flex justify-center items-center  border'>
