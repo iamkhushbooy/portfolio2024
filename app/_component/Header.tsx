@@ -41,8 +41,8 @@ const Header = () => {
             {press &&
                 <div id="forbuger" className='w-full h-screen bg-[rgb(12,173,222)]
                   flex justify-center items-center flex-col
-                  absolute top-[50px] 
-                  md:
+                  absolute top-[50px]
+                  
                 '>
                     <Link onClick={toggle} className='m-3 font-bold text-white' href={'/'}>ABOUT</Link>
                     <Link onClick={toggle} className='m-3 font-bold text-white' href={'/skills'}>SKILLS</Link>
