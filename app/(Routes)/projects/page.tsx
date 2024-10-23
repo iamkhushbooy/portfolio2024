@@ -4,9 +4,13 @@ const page = () => {
   return (
     <div className='w-full min-h-screen  bg-slate-50'>
        <header className="py-12 px-4 md:px-6 text-center">
-         <h1 className="text-4xl font-bold text-primary mb-4">My Projects</h1>
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-        Explore a collection of my recent web development projects, highlighting my skills in various technologies. kkk
+         <h1 className="text-2xl font-bold text-primary mb-4
+         md:text-4xl
+         ">My Projects</h1>
+        <p className="font-light text-muted-foreground max-w-2xl mx-auto
+        md:text-xl
+        ">
+        Explore a collection of my recent web development projects, highlighting my skills in various technologies.
         </p>
       </header>
       <div className='flex justify-center items-center flex-wrap'>
