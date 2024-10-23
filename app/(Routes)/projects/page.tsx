@@ -6,7 +6,7 @@ const page = () => {
        <header className="py-12 px-4 md:px-6 text-center">
          <h1 className="text-4xl font-bold text-primary mb-4">My Projects</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-        Explore a collection of my recent web development projects, highlighting my skills in various technologies.
+        Explore a collection of my recent web development projects, highlighting my skills in various technologies. kkk
         </p>
       </header>
       <div className='flex justify-center items-center flex-wrap'>
