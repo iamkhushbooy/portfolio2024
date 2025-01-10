@@ -3,7 +3,7 @@ import React from 'react';
 const Projectprops = ({ topic, text, l, a }: { topic: string, text: string, l: string, a: string }) => {
   return (
     <div className='w-full max-w-[400px] min-h-[300px]  shadow-lg rounded-lg flex flex-col m-6 p-6
-    bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100
+    bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100
     '>
       <h1 className="text-[18px] font-semibold text-black-600 mb-4
       md:text-[22px]

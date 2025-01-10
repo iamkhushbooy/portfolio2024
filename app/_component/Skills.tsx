@@ -5,7 +5,7 @@ const Skills = () => {
 
   return (
     <div className='w-full flex justify-around items-center flex-col
-     md:flex-row md:flex-wrap md:w-auto md:mx-8
+     md:flex-row md:flex-wrap md:w-auto md:mx-8 
     '>
       <Skillstyle heading={'BASIC WEB DEVELOPMENT'}>
         <SkillChildrenStyle img={'/skillicons/html.png'} name={'HTML'}></SkillChildrenStyle>

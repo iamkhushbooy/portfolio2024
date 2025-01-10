@@ -19,9 +19,6 @@ const Header = () => {
     const toggle = () => {
         setPress(!press)
     }
-    // const togglebutton = () => {
-    //     setdark(!dark)
-    // }
     return (
         <div className='w-full h-[50px] flex items-center bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100'>
             <div className='ml-8 w-[80%]  flex items-center'>
@@ -32,14 +29,14 @@ const Header = () => {
             </div>
             {!laptop ? <>
                 {!press ?
-                    <Image className='mx-8'
+                    <Image 
                         onClick={toggle}
                         src={'/icons/menu.png'}
                         alt={'menu'}
                         width={30}
                         height={30}
                     ></Image> :
-                    <Image className='mx-8'
+                    <Image 
                         onClick={toggle}
                         src={'/icons/close.png'}
                         alt={'cross'}
