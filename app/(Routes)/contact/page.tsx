@@ -4,6 +4,7 @@ const page = () => {
   return (
     <div className='w-full min-h-screen
     md:flex md:justify-center md:items-center md:flex-row
+    bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100
     '>
      <div className='md:flex md:flex-col 
      md:h-[400px]

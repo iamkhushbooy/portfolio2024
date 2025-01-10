@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Skills from './_component/Skills'
 const page = () => {
   return (
-    <div className='w-full min-h-screen'>
+    <div className='w-full min-h-screen          
+     bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100'>
     <div className='w-full h-[80vh] mb-10
            md:flex md:justify-center md:items-center'>
       <div id="image" className='w-[60%] mx-[20%] my-10 h-[60%] flex justify-center items-center flex-col 

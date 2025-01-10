@@ -2,9 +2,12 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTheme } from './context/ThemeContext'
 const Header = () => {
+    const { isDark, toggleTheme } = useTheme();
     const [press, setPress] = useState(false)
     let [laptop, setLaptop] = useState(false)
+    
     useEffect(() => {
         const handleResize = () => {
             setLaptop(window.innerWidth >= 768)
@@ -16,8 +19,11 @@ const Header = () => {
     const toggle = () => {
         setPress(!press)
     }
+    // const togglebutton = () => {
+    //     setdark(!dark)
+    // }
     return (
-        <div className='w-full h-[50px] flex items-center'>
+        <div className='w-full h-[50px] flex items-center bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100'>
             <div className='ml-8 w-[80%]  flex items-center'>
                 <Link href={'https://github.com/iamkhushbooy'}>
                     <Image src={'/icons/github.png'} width={30} height={30} alt={'github'}></Image>
@@ -26,16 +32,27 @@ const Header = () => {
             </div>
             {!laptop ? <>
                 {!press ?
-                    <Image className='mx-8' onClick={toggle} src={'/icons/menu.png'} alt={'menu'} width={30} height={30} ></Image> :
-                    <Image className='mx-8' onClick={toggle} src={'/icons/close.png'} alt={'cross'} width={20} height={20} ></Image>
+                    <Image className='mx-8'
+                        onClick={toggle}
+                        src={'/icons/menu.png'}
+                        alt={'menu'}
+                        width={30}
+                        height={30}
+                    ></Image> :
+                    <Image className='mx-8'
+                        onClick={toggle}
+                        src={'/icons/close.png'}
+                        alt={'cross'}
+                        width={20}
+                        height={20}
+                    ></Image>
                 }
             </> : <>
                 <div id="forbuger" className='w-full h-[70px]
-                  flex justify-end items-center mx-8'>
-                    <Link className='m-3 text-blue-600' href={'/'}>ABOUT</Link>
-                    <Link className='m-3 text-blue-600' href={'/skills'}>SKILLS</Link>
-                    <Link className='m-3 text-blue-600' href={'/projects'}>PROJECT</Link>
-                    <Link className='m-3 text-blue-600' href={'/contact'}>CONTACT</Link>
+                  flex justify-end items-center'>
+                    <Link className='m-3 text-blue-600' href={'/'}>Home</Link>
+                    <Link className='m-3 text-blue-600' href={'/projects'}>Projects</Link>
+                    <Link className='m-3 text-blue-600' href={'/contact'}>Contact</Link>
                 </div>
             </>}
             {press &&
@@ -44,12 +61,25 @@ const Header = () => {
                   absolute top-[50px]
                   
                 '>
-                    <Link onClick={toggle} className='m-3 font-bold text-white' href={'/'}>ABOUT</Link>
-                    <Link onClick={toggle} className='m-3 font-bold text-white' href={'/skills'}>SKILLS</Link>
-                    <Link onClick={toggle} className='m-3 font-bold text-white' href={'/projects'}>PROJECT</Link>
-                    <Link onClick={toggle} className='m-3 font-bold text-white' href={'/contact'}>CONTACT</Link>
+                    <Link onClick={toggle} className='m-3 font-bold text-white' href={'/'}>Home</Link>
+                    <Link onClick={toggle} className='m-3 font-bold text-white' href={'/projects'}>Project</Link>
+                    <Link onClick={toggle} className='m-3 font-bold text-white' href={'/contact'}>Contact</Link>
                 </div>
             }
+
+            <button className="mx-10" onClick={toggleTheme}>
+                <Image
+                    src={isDark ? '/light.png' : '/dark.png'}
+                    alt={isDark? 'Light Mode' : '/Dark Mode'}
+                    width={50}
+                    height={30}
+                />
+            </button>
+
+
+
+
+
 
 
 
