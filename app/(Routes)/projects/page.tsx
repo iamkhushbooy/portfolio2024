@@ -17,18 +17,21 @@ const page = () => {
       </header>
       <div className='flex justify-center items-center flex-wrap'>
         <Projectprops
+        img={'/formbuilder.jpeg'}
           topic={'Form Builder'}
           text={"FormBuilder is a user-friendly tool for creating and sharing custom forms, allowing creators to receive responses directly via email. It’s perfect for easy data collection, feedback, or event registrations."}
           l={"https://kyformbuilder.vercel.app/"}
           a={"https://github.com/iamkhushbooy/formbuilder"}
         ></Projectprops>
         <Projectprops
+        img={'/todolist.jpeg'}
           topic={'Taskify'}
           text={"I developed a to-do list app using HTML, Tailwind CSS, and JavaScript, delivering a user-friendly experience to boost your productivity."}
           l={"https://kytaskify.vercel.app/"}
           a={"https://github.com/iamkhushbooy/taskify"}
         ></Projectprops>
         <Projectprops
+        img={'/translator.jpeg'}
           topic={'Translator'}
           text={"Designed and developed a translator using a combination of HTML, CSS, JavaScript and google translate api."}
           l={"https://kykitranslate.netlify.app/"}
