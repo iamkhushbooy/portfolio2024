@@ -20,7 +20,7 @@ const Footer = () => {
             </Link>
           </div>
           <p className='w-[70%] mx-[15%] text-center mt-4 text-[15px]'>khushboocsjmu@gmail.com</p>
-          <footer className='w-[70%] mx-[15%] text-center mt-6 text-[14px] text-[#000000ab]'>&copy; 2024 By Khushboo Yadav</footer>
+          <footer className='w-[70%] mx-[15%] text-center mt-6 text-[14px] text-[#000000ab]'>&copy; 2024 By Khushboo</footer>
          
         </div>
     )
