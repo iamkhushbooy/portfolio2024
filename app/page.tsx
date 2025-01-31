@@ -12,7 +12,7 @@ const page = () => {
         {/* Wrapper to align image and text */}
         <div
           className='flex flex-col-reverse md:flex-row justify-center items-center 
-          w-full md:w-[60%] gap-10'
+          w-full md:w-[60%] gap-10 mb-20'
         >
           {/* Text Section */}
           <div className='text-center md:w-[50%]'>
@@ -33,7 +33,8 @@ const page = () => {
           {/* Image and Button Section */}
           <div
             id="image"
-            className='flex flex-col justify-center items-center md:w-[50%]'
+            className='flex flex-col justify-around items-center md:w-[50%] h-[380px]
+            '
           >
             <Image
               src={'/image.jpeg'}
