@@ -14,23 +14,6 @@ const page = () => {
           className='flex flex-col md:flex-row justify-center items-center 
           w-full md:w-[60%] gap-10'
         >
-          {/* Image and Button Section */}
-          <div
-            id="image"
-            className='flex flex-col justify-center items-center md:w-[50%]'
-          >
-            <Image
-              src={'/khushi.jpg'}
-              width={250}
-              height={250}
-              alt={'Profile Image'}
-              className='rounded-full'
-            />
-            <button className='border border-blue-500 text-blue-500 p-2 my-5'>
-              Download Resume
-            </button>
-          </div>
-
           {/* Text Section */}
           <div className='text-center md:w-[50%]'>
             <h1 className='text-[20px] font-extralight'>
@@ -47,6 +30,23 @@ const page = () => {
               into reality through code.
             </p>
           </div>
+          {/* Image and Button Section */}
+          <div
+            id="image"
+            className='flex flex-col justify-center items-center md:w-[50%]'
+          >
+            <Image
+              src={'/image.jpeg'}
+              width={250}
+              height={250}
+              alt={'Profile Image'}
+              className='rounded-full'
+            />
+            <button className='border border-blue-500 text-blue-500 p-2 my-5'>
+              Download Resume
+            </button>
+          </div>
+
         </div>
       </div>
       <Skills />
