@@ -67,8 +67,7 @@
 'use client';
 import React, { useState } from 'react';
 import { submitFormAction } from './actions';
-
-export const Page = () => {
+ const page = () => {
     const [outputmsg, setOutputmsg] = useState('');
     const [loading, setLoading] = useState(false);
 
@@ -100,3 +99,4 @@ export const Page = () => {
         </div>
     );
 };
+export default page
