@@ -11,7 +11,7 @@ const page = () => {
         md:flex-row md:justify-center md:items-center'>
         {/* Wrapper to align image and text */}
         <div
-          className='flex flex-col md:flex-row justify-center items-center 
+          className='flex flex-col-reverse md:flex-row justify-center items-center 
           w-full md:w-[60%] gap-10'
         >
           {/* Text Section */}
