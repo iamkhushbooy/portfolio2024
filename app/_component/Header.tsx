@@ -3,10 +3,12 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTheme } from './context/ThemeContext'
+import { usePathname } from 'next/navigation'
 const Header = () => {
     const { isDark, toggleTheme } = useTheme();
     const [press, setPress] = useState(false)
     let [laptop, setLaptop] = useState(false)
+    const pathName=usePathname();
     
     useEffect(() => {
         const handleResize = () => {
@@ -46,10 +48,18 @@ const Header = () => {
                 }
             </> : <>
                 <div id="forbuger" className='w-full h-[70px]
-                  flex justify-end items-center'>
-                    <Link className='m-3 text-blue-600' href={'/'}>Home</Link>
-                    <Link className='m-3 text-blue-600' href={'/projects'}>Projects</Link>
-                    <Link className='m-3 text-blue-600' href={'/contact'}>Contact</Link>
+                  flex justify-end items-center font-semibold gap-5'>
+                    <Link 
+                    href={'/'}
+                    className='text-blue-600'
+                    >Home</Link>
+                    <Link 
+                    href={'/projects'}
+                    className={`${pathName==='/projects'?'text-pink-600':'text-blue-600'}`}
+                    >Projects</Link>
+                    <Link  href={'/contact'}
+                    className={`${pathName==='/contact'?'text-pink-600':'text-blue-600'}`}
+                    >Contact</Link>
                 </div>
             </>}
             {press &&
@@ -72,14 +82,6 @@ const Header = () => {
                     height={30}
                 />
             </button>
-
-
-
-
-
-
-
-
         </div>
     )
 }
